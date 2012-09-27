@@ -4,5 +4,6 @@
  <dependencies>
   <dependency>profile-eea.jquery:01-jquery</dependency>
   <dependency>profile-eea.jquery:16-tokeninput</dependency>
+  <dependency>profile-jarn.jsi18n:default</dependency>
  </dependencies>
 </metadata>
