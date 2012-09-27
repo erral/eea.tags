@@ -14,4 +14,11 @@
     file="./js/tags.js"
     />
 
+  <browser:page
+    for="*"
+    name="eea.tags.i18n.js"
+    class=".js.I18NJavascript"
+    permission="zope.Public"
+    />
+
 </configure>
