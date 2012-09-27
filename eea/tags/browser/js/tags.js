@@ -82,15 +82,15 @@ jQuery.fn.eeatags = function(options){
       .attr('id', self.wid)
       .attr('name', self.wid + ":lines").appendTo(self);
 
-    self.noResultsText = self.allowNewTokens ? 'Tag not found. Press "Enter" to add it' : 'No results';
+    self.noResultsText = self.allowNewTokens ? _('Tag not found. Press "Enter" to add it') : _('No results');
 
     self.widget.tokenInput(self.tags, {
       theme: 'facebook',
       allowNewTokens: self.allowNewTokens,
       tokenValue: 'name',
       tokenDelimiter: '\n',
-      hintText: "Start typing to get some tags suggestions",
-      searchingText: "Searching...",
+      hintText: _("Start typing to get some tags suggestions"),
+      searchingText: _("Searching..."),
       noResultsText: self.noResultsText,
       preventDuplicates: true,
       prePopulate: self.prePopulate
