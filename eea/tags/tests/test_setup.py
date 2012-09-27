@@ -66,11 +66,23 @@ class TestSetup(unittest.TestCase):
             in jsRegistry.getResourceIds()
         )
 
+        self.assertTrue(
+            "eea.tags.i18n.js"
+            in jsRegistry.getResourceIds())
+
         # Dependencies
         self.assertTrue(
             "++resource++jquery.tokeninput.js"
             in jsRegistry.getResourceIds()
         )
+
+        self.assertTrue(
+            "++resource++jsi18n.js"
+            in jsRegistry.getResourceIds()
+        )
+
+
+
 
     def test_js_exists(self):
         """ JS exists
@@ -79,6 +91,12 @@ class TestSetup(unittest.TestCase):
         js = portal.restrictedTraverse('++resource++eea.tags.js', None)
         self.assertTrue(js is not None)
 
+        js = portal.restrictedTraverse('eea.tags.i18n.js', None)
+        self.assertTrue(js is not None)
+
         # Dependencies
         js = portal.restrictedTraverse('++resource++jquery.tokeninput.js', None)
+        self.assertTrue(js is not None)
+
+        js = portal.restrictedTraverse('++resource++jsi18n.js', None)
         self.assertTrue(js is not None)
