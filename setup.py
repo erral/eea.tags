@@ -31,6 +31,7 @@ setup(name=NAME,
           'setuptools',
           # -*- Extra requirements: -*-
           'eea.jquery',
+          'jarn.jsi18n'
       ],
       extras_require={
           'test': ['plone.app.testing',]
